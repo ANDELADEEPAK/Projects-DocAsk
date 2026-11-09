@@ -155,7 +155,10 @@ from backend.rag import store_chunks, generate_answer
 app = FastAPI(
     title="DocAsk API",
     description="AI-powered PDF Question Answering System",
-    version="1.0"
+    version="1.0",
+    docs_url="/docs",
+    redoc_url="/redoc",
+    openapi_url="/openapi.json"
 )
 
 
